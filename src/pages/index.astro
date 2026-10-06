@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import Rejestr from "../layouts/Rejestr.astro";
+
+const posts = (await getCollection("rejestr")).sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+const fmt = new Intl.DateTimeFormat("pl-PL", { day: "numeric", month: "short" });
+---
+<Rejestr
+  title="Zmiany. Rejestr drobnych przesunięć"
+  description="Portal o rzeczach, które da się pokazać palcem: budzik, kubek, półka, słowo, droga do pracy. Bez poradnika na całe życie."
+>
+  <section class="hero">
+    <p class="eyebrow">Od września 2026</p>
+    <h1 class="mark">Zmiany<span class="delta" aria-hidden="true">Δ</span></h1>
+    <p class="lede">Zapisuję przesunięcia, które mieszczą się w jednym zdaniu. Budzik, kubek, półka, słowo, które weszło do rozmowy zamiast innego. Trzynaście numerów na start.</p>
+  </section>
+  <ol class="ledger">
+    {posts.map((post) => (
+      <li>
+        <a class="row" href={`/rejestr/${post.slug}/`}>
+          <span class="num">{post.data.numer || "·"}</span>
+          <span class="meta">{fmt.format(post.data.pubDate)}<br />{post.data.category}</span>
+          <span>
+            <h2>{post.data.title}</h2>
+            <p>{post.data.description}</p>
+          </span>
+        </a>
+      </li>
+    ))}
+  </ol>
+</Rejestr>

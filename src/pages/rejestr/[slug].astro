@@ -1,0 +1,48 @@
+---
+import { getCollection } from "astro:content";
+import Rejestr from "../../layouts/Rejestr.astro";
+
+export async function getStaticPaths() {
+  const posts = (await getCollection("rejestr")).sort((a, b) => a.data.pubDate.getTime() - b.data.pubDate.getTime());
+  return posts.map((post, index) => ({
+    params: { slug: post.slug },
+    props: { post, next: posts[index + 1] || null },
+  }));
+}
+
+const { post, next } = Astro.props;
+const { Content } = await post.render();
+const date = post.data.pubDate.toISOString().slice(0, 10);
+const canonical = `https://www.zmiany.eu/rejestr/${post.slug}/`;
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: date,
+  inLanguage: "pl",
+  author: { "@type": "Person", name: post.data.author || "Iga Wolska" },
+  publisher: { "@type": "Organization", name: "Zmiany", url: "https://www.zmiany.eu/" },
+  mainEntityOfPage: canonical,
+};
+---
+<Rejestr title={`${post.data.title} | Zmiany`} description={post.data.description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="sheet">
+    <aside class="rail">
+      <span class="num">{post.data.numer || ""}</span>
+      <p>{post.data.category}</p>
+      <p>{date}</p>
+      <p>{post.data.readingTime}</p>
+    </aside>
+    <div class="prose">
+      <h1>{post.data.title}</h1>
+      <p class="dek">{post.data.description}</p>
+      <Content />
+      <p class="byline">{post.data.author}. {post.data.authorBio}</p>
+      {next && (
+        <a class="next" href={`/rejestr/${next.slug}/`}>Następny numer: {next.data.title}</a>
+      )}
+    </div>
+  </article>
+</Rejestr>

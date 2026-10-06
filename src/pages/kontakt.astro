@@ -1,0 +1,30 @@
+---
+import Rejestr from "../layouts/Rejestr.astro";
+---
+<Rejestr
+  title="Kontakt | Zmiany"
+  description="List do redakcji Zmiany.eu. Adres pokazuje się po kliknięciu, bez formularza."
+>
+  <article class="page prose">
+    <p class="eyebrow">Listy</p>
+    <h1>Kontakt</h1>
+    <p>Jak masz temat, który da się pokazać palcem, napisz. Nie prowadzę formularza i nie zbieram adresów do wysyłki.</p>
+    <p class="mail">
+      <b id="qp94j" style="font-weight:inherit;cursor:pointer">Tu można pisać</b>
+      <script is:inline>
+        document.getElementById("qp94j").addEventListener("click", function () {
+          var even = 80;
+          var odd = 83;
+          var a = [56, 35, 34, 104, 55, 49, 60, 51, 61];
+          var b = [50, 54, 107, 19, 62, 58, 125, 60];
+          var s = "";
+          for (var i = 0; i < 17; i++) {
+            var code = i % 2 === 0 ? a[i / 2] : b[(i - 1) / 2];
+            s += String.fromCharCode(code ^ (i % 2 === 0 ? even : odd));
+          }
+          this.textContent = s;
+        });
+      </script>
+    </p>
+  </article>
+</Rejestr>

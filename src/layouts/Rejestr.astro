@@ -1,0 +1,55 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+}
+const { title, description, canonical } = Astro.props;
+const origin = "https://www.zmiany.eu";
+const href = canonical || new URL(Astro.url.pathname, origin).href;
+---
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={href} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={href} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,560;12..96,760&family=Petrona:ital,opsz,wght@0,8..96,420;0,8..96,620;1,8..96,420&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip" href="#tresc">Przejdź do treści</a>
+    <div class="frame">
+      <header class="top">
+        <a href="/">zmiany.eu</a>
+        <nav aria-label="Główne">
+          <a href="/o-nas/">O rejestrze</a>
+          <a href="/kontakt/">Kontakt</a>
+        </nav>
+      </header>
+      <main id="tresc">
+        <slot />
+      </main>
+      <footer class="foot">
+        <span>Rejestr drobnych przesunięć</span>
+        <nav aria-label="Stopka">
+          <a href="/o-nas/">O rejestrze</a>
+          <a href="/kontakt/">Kontakt</a>
+          <a href="/polityka-prywatnosci/">Prywatność</a>
+        </nav>
+      </footer>
+    </div>
+    <script defer src="https://umami-pink-phi.vercel.app/script.js" data-website-id="4e813005-ebc5-4009-ba84-4ead0399d2f1" data-domains="zmiany.eu,www.zmiany.eu"></script>
+  </body>
+</html>
