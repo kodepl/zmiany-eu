@@ -6,6 +6,8 @@ author: "Iga Wolska"
 authorBio: "Prowadzi rejestr Zmiany. Zapisuje przesunięcia, które da się pokazać palcem."
 category: "Miasto"
 numer: "008"
+image: "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1400&h=900&q=80"
+imageCaption: "Ulica bez auta na pierwszym planie. W tekście pusto jest pod oknem, nie na całej drodze."
 tags: ["podwórko", "okno"]
 readingTime: "5 min"
 ---

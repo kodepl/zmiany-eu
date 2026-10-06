@@ -6,6 +6,8 @@ author: "Iga Wolska"
 authorBio: "Prowadzi rejestr Zmiany. Zapisuje przesunięcia, które da się pokazać palcem."
 category: "Miasto"
 numer: "003"
+image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1400&h=900&q=80"
+imageCaption: "Ulica z nazwą na ścianie. To nie ten róg z tekstu, tylko sam motyw nazwy."
 tags: ["ulica", "nazwa"]
 readingTime: "6 min"
 ---

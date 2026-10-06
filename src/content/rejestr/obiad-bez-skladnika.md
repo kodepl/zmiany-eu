@@ -6,6 +6,8 @@ author: "Iga Wolska"
 authorBio: "Prowadzi rejestr Zmiany. Zapisuje przesunięcia, które da się pokazać palcem."
 category: "Kuchnia"
 numer: "009"
+image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1400&h=900&q=80"
+imageCaption: "Ziarno, zanim wpadnie do garnka. W tekście kasza jest już ugotowana."
 tags: ["obiad", "przepis"]
 readingTime: "5 min"
 ---

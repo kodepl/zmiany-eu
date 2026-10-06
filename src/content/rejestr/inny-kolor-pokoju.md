@@ -6,6 +6,8 @@ author: "Iga Wolska"
 authorBio: "Prowadzi rejestr Zmiany. Zapisuje przesunięcia, które da się pokazać palcem."
 category: "Dom"
 numer: "010"
+image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=1400&h=900&q=80"
+imageCaption: "Lampa, od której zależy kolor ściany."
 tags: ["światło", "pokój"]
 readingTime: "5 min"
 ---

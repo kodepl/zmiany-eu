@@ -6,6 +6,8 @@ author: "Iga Wolska"
 authorBio: "Prowadzi rejestr Zmiany. Zapisuje przesunięcia, które da się pokazać palcem."
 category: "Dom"
 numer: "006"
+image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1400&h=900&q=80"
+imageCaption: "Kosz z praniem."
 tags: ["pranie", "mieszkanie"]
 readingTime: "5 min"
 ---

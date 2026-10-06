@@ -24,6 +24,7 @@ const jsonLd = {
   author: { "@type": "Person", name: post.data.author || "Iga Wolska" },
   publisher: { "@type": "Organization", name: "Zmiany", url: "https://www.zmiany.eu/" },
   mainEntityOfPage: canonical,
+  ...(post.data.image ? { image: post.data.image } : {}),
 };
 ---
 <Rejestr title={`${post.data.title} | Zmiany`} description={post.data.description} canonical={canonical}>
@@ -38,6 +39,12 @@ const jsonLd = {
     <div class="prose">
       <h1>{post.data.title}</h1>
       <p class="dek">{post.data.description}</p>
+      {post.data.image && (
+        <figure class="shot">
+          <img src={post.data.image} alt={post.data.imageCaption || post.data.title} width="1400" height="900" loading="lazy" decoding="async" />
+          {post.data.imageCaption && <figcaption>{post.data.imageCaption}</figcaption>}
+        </figure>
+      )}
       <Content />
       <p class="byline">{post.data.author}. {post.data.authorBio}</p>
       {next && (

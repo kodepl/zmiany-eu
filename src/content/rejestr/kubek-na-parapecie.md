@@ -6,6 +6,8 @@ author: "Iga Wolska"
 authorBio: "Prowadzi rejestr Zmiany. Zapisuje przesunięcia, które da się pokazać palcem."
 category: "Dom"
 numer: "002"
+image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1400&h=900&q=80"
+imageCaption: "Jedna filiżanka. W tekście stoi na parapecie."
 tags: ["biurko", "kubek"]
 readingTime: "5 min"
 ---

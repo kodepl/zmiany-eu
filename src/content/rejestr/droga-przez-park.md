@@ -6,6 +6,8 @@ author: "Iga Wolska"
 authorBio: "Prowadzi rejestr Zmiany. Zapisuje przesunięcia, które da się pokazać palcem."
 category: "Miasto"
 numer: "005"
+image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&h=900&q=80"
+imageCaption: "Ścieżka między drzewami."
 tags: ["droga", "park"]
 readingTime: "5 min"
 ---

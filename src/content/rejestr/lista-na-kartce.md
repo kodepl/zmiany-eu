@@ -6,6 +6,8 @@ author: "Iga Wolska"
 authorBio: "Prowadzi rejestr Zmiany. Zapisuje przesunięcia, które da się pokazać palcem."
 category: "Sklep"
 numer: "007"
+image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1400&h=900&q=80"
+imageCaption: "Lista odhaczana długopisem."
 tags: ["zakupy", "kartka"]
 readingTime: "5 min"
 ---

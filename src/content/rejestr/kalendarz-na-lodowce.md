@@ -6,6 +6,8 @@ author: "Iga Wolska"
 authorBio: "Prowadzi rejestr Zmiany. Zapisuje przesunięcia, które da się pokazać palcem."
 category: "Dom"
 numer: "012"
+image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1400&h=900&q=80"
+imageCaption: "Kartka kalendarza na stole. W tekście wisi na lodówce."
 tags: ["kalendarz", "lodówka"]
 readingTime: "5 min"
 ---

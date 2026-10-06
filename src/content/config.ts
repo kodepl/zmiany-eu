@@ -12,6 +12,7 @@ const rejestr = defineCollection({
     tags: z.array(z.string()).optional(),
     readingTime: z.string().optional(),
     image: z.string().optional(),
+    imageCaption: z.string().optional(),
     numer: z.string().optional(),
   }),
 });

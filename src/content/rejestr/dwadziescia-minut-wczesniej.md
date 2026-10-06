@@ -6,6 +6,8 @@ author: "Iga Wolska"
 authorBio: "Prowadzi rejestr Zmiany. Zapisuje przesunięcia, które da się pokazać palcem."
 category: "Dom"
 numer: "001"
+image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=1400&h=900&q=80"
+imageCaption: "Zegar na ścianie. W tekście chodzi o budzik, tu widać samą godzinę."
 tags: ["budzik", "poranek"]
 readingTime: "5 min"
 ---

@@ -6,6 +6,8 @@ author: "Iga Wolska"
 authorBio: "Prowadzi rejestr Zmiany. Zapisuje przesunięcia, które da się pokazać palcem."
 category: "Sklep"
 numer: "004"
+image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&h=900&q=80"
+imageCaption: "Półka w sklepie. W tekście zniknęła kasza, tu widać skrzynki i przerwy między nimi."
 tags: ["sklep", "półka"]
 readingTime: "5 min"
 ---

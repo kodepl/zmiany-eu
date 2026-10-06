@@ -6,6 +6,8 @@ author: "Iga Wolska"
 authorBio: "Prowadzi rejestr Zmiany. Zapisuje przesunięcia, które da się pokazać palcem."
 category: "Praca"
 numer: "013"
+image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1400&h=900&q=80"
+imageCaption: "Poniedziałek przy laptopie."
 tags: ["urlop", "biurko"]
 readingTime: "6 min"
 ---
