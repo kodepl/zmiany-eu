@@ -10,7 +10,6 @@ category: "Dom"
 tags: ["ankieta", "głosowanie", "decyzja"]
 readingTime: "5 min"
 image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1400&h=900&q=80"
-imageCaption: "Kartka na lodówce."
 ---
 
 Na drzwiach lodówki powieszona jest kartka. Wyraźnie napisane jedno pytanie: "Co robimy w ten weekend?" Zamiast trzech rund rozmów w kuchni, jedna prosta ankieta. Właściwie można by się zastanowić, dlaczego wcześniej nie wpadliśmy na ten pomysł. Weekendowe plany często stają się tematem długich dyskusji, które nie prowadzą do żadnego konkretnego rozwiązania. A przecież, co może być prostszego niż oddanie głosu w sprawie weekendowych aktywności?
