@@ -10,7 +10,6 @@ category: "Dom"
 tags: ["pogoda", "aplikacja", "rano"]
 readingTime: "6 min"
 image: "https://images.unsplash.com/photo-1499346030926-9a72daac6c63?auto=format&fit=crop&w=1400&h=900&q=80"
-imageCaption: "Okno i chmury."
 ---
 
 Za oknem siąpi deszcz, a niebo pokryte jest szarymi chmurami. Weekend miała być czasem relaksu, ale prognoza pogody pokrzyżowała plany. Zamiast spaceru w parku czy wyjazdu za miasto, nasz plan zmienia się w coś zupełnie innego. Jak więc pogoda wpłynęła na nasze weekendowe aktywności? Zamiast trzech aplikacji próbujących przewidzieć, czy może jednak wyjść na zewnątrz, postanowiłam skorzystać z jednego narzędzia, które oferuje wszystko, czego potrzebuję.
